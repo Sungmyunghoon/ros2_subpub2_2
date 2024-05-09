@@ -9,7 +9,7 @@ class Sub : public rclcpp::Node // Sub클레스 선언
 {
 private:
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr sub_;  // Vector 메시지를 구하기 위한 스마트 포인터
-    void subscribe_msg(const geometry_msgs::msg::Vector3::SharedPtr msg) const; //정수형 메시지를 구독할 때 호출되는 콜백 함수
+    void subscribe_msg(const geometry_msgs::msg::Vector3::SharedPtr msg) const; //Vector 메시지를 구독할 때 호출되는 콜백 함수
 public:
     Sub(); // 생성자
 };
